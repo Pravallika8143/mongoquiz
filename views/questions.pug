@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Quiz
+    link(href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' rel='stylesheet')
+  body.container.mt-5
+    h1.text-center.mb-4 Quiz on #{questions[0].category}
+    form(action=`/evaluate/${questions[0].category}` method="POST")
+      each question, index in questions
+        .card.mb-3.shadow-sm
+          .card-body
+            h5.card-title #{index + 1}. #{question.question.text}
+            .mt-3
+              each option in question.options
+                .form-check
+                  input.form-check-input(type="radio" name=`q${index}` id=`q${index}-${option}` value=option required)
+                  label.form-check-label(for=`q${index}-${option}`) #{option}
+      .text-center.mt-4
+        button.btn.btn-success.btn-lg(type="submit") Submit Quiz

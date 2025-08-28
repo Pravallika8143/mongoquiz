@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Quiz Score
+    link(href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' rel='stylesheet')
+  body.container.mt-5
+    h1.text-center Quiz Results
+    h3.text-success.text-center. Your Score: #{correctAns} / #{totalQuestions}
+    if correctAns === totalQuestions
+      p.text-center.text-primary Great job!!!
+    else if correctAns > totalQuestions / 2
+      p.text-center.text-info Well done!!1
+    else
+      p.text-center.text-danger Keep practicing...!!
