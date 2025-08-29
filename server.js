@@ -12,6 +12,7 @@ app.use(express.json());
 app.use(cors())
 app.use(express.urlencoded({ extended: true }));
 
+
 var mongourl = "mongodb+srv://pravallika:pravallika7@cluster0.x6xvdi7.mongodb.net/students?retryWrites=true&w=majority&appName=Cluster0";
 mongoose.connect(mongourl)
         .then(() => console.log("Connected"))

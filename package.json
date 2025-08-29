@@ -9,15 +9,25 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.18.0",
-    "mongoose": "^8.17.2"
+    "mongoose": "^8.17.2",
+    "multer": "^2.0.2",
+    "pug": "^3.0.3"
   },
   "devDependencies": {
     "@types/node": "^24.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pravallika8143/mongoquiz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pravallika8143/mongoquiz/issues"
+  },
+  "homepage": "https://github.com/Pravallika8143/mongoquiz#readme",
+  "description": ""
 }
