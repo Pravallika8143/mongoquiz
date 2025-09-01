@@ -10,7 +10,7 @@ const io = new Server(server);
 io.on("connection",(socket) => {
     console.log("Socket Connected");
     io.emit("countInc",{ count })
-    // setInterval(() => {
+    // setInterval((44) => {
     // count++;
     // io.emit('presentCount',{ count });
     // },100);
