@@ -21,6 +21,12 @@ app.get("/incCount",(req,res) => {
     io.emit("countInc",{ count });
 });
 
+app.get("/incCount",(req,res) => {
+    count--;
+    io.emit("countInc",{ count });
+});
+
+
 app.use(express.static(__dirname + "/public"));
 
 app.get("/",(req,res) => {
