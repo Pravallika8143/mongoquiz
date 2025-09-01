@@ -9,11 +9,16 @@
      <button onclick="inc()">Inc Count</button>
      <br>
      <br>
-     <button>Dec Count</button>
+     <button >Dec Count</button>
      <script>
         function inc(){
             fetch("/incCount").then((res) => {console.log(res)})
         }
+
+        // function dec(){
+        //     fetch("/decCount").then((res) => {console.log(res)})
+        // }
+
      </script>
 </body>
 </html>

@@ -16,15 +16,20 @@ io.on("connection",(socket) => {
     // },100);
 });
 
+// io.on("connection",(socket) => {
+//     console.log("Socket Connected");
+//     io.emit("countDec",{ count })
+// });
+
 app.get("/incCount",(req,res) => {
     count++;
     io.emit("countInc",{ count });
 });
 
-app.get("/incCount",(req,res) => {
-    count--;
-    io.emit("countInc",{ count });
-});
+// app.get("/decCount",(req,res) => {
+//     count--;
+//     io.emit("countDec",{ count });
+// });
 
 
 app.use(express.static(__dirname + "/public"));
